@@ -1,0 +1,37 @@
+version: v1.0
+name: First pipeline example
+agent:
+    machine:
+        type: e1-standard-2
+        os_image: ubuntu1804
+blocks:
+    -   name: "Install dependencies"
+        task:
+            jobs:
+                -   name: npm install and cache
+                    commands:
+                        - checkout
+                        - cache restore node-modules-$SEMAPHORE_GIT_BRANCH-$(checksum package-lock.json),node-modules-$SEMAPHORE_GIT_BRANCH,node-modules-master
+                        - npm install
+                        - cache store node-modules-$SEMAPHORE_GIT_BRANCH-$(checksum package-lock.json) node_modules
+                        - ls
+                        - ls node_modules
+                        - npm list -g --depth=0
+    -   name: "Unit tests"
+        task:
+            prologue:
+                commands:
+                    - checkout
+                    - sem-version node 11.5.0
+                    - cache restore node-modules-$SEMAPHORE_GIT_BRANCH-$(checksum package-lock.json),node-modules-$SEMAPHORE_GIT_BRANCH,node-modules-master
+            jobs:
+                -   name: Unit Test
+                    commands:
+                        - ls
+                        - echo "Runing Unit Test"
+                        - npm run test
+                -   name: Lint code
+                    commands:
+                        - ls
+                        - echo "Runing Lint"
+                        - npm run lint
