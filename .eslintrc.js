@@ -1,14 +1,16 @@
 module.exports = {
-    root: true,
-    parser: 'babel-eslint',
+    root:          true,
+    parser:        'babel-eslint',
     parserOptions: {
-        sourceType: 'module'
+        sourceType: 'module',
     },
-    env: {
+    env:           {
         browser: true,
     },
-    extends: 'standard',
-    'rules': {
-        'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
-    }
+    extends:       'airbnb-base',
+    'rules':       {
+        'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+        'semi':        [2, 'never'],
+        'indent':      ['error', 'tab'],
+    },
 }

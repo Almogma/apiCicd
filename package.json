@@ -39,5 +39,6 @@
     "cross-env": "^5.2.0"
   },
   "dependencies": {
+    "eslint-config-airbnb-base": "^13.1.0"
   }
 }

@@ -1,9 +1,12 @@
-export class DogsApi {
+export default class DogsApi {
     constructor() {
 
     }
 
-    getAlldogs() {
-        return null
+    /**
+     *
+     */
+    static getAlldogs(dog) {
+        return dog
     }
 }
