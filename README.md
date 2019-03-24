@@ -83,5 +83,3 @@ shift + F10
 - **[Yaniv Ben Zvi](https://github.com/yanivbenzvi)** 
 - **[Boris Leviken](https://github.com/Borisl90)** 
 - **[Aharon Paz](https://github.com/Ronni3p)**
-
-##Acknowledgments
