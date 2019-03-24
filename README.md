@@ -28,10 +28,6 @@ system requirements:
 Open folder for this project and clone this repository use follow command:
 ```
 git clone git@github.com:yanivbenzvi/apiCicd.git
-
-<<<<<<< HEAD
-Click [here](http://foo.com) to go somewhere.
-=======
 ```
 
 After nodeJs installion, open cmd and navigate to project folder and run the follow command.:
@@ -86,4 +82,3 @@ shift + F10
 - **[Yaniv Ben Zvi](https://github.com/yanivbenzvi)** 
 - **[Boris Leviken](https://github.com/Borisl90)** 
 - **[Aharon Paz](https://github.com/Ronni3p)**
->>>>>>> cb1a35b154cc239b6d683a17dfac5cddec3ada8e
