@@ -1,0 +1,410 @@
+{
+  "results": [
+    {
+      "vote_count": 10505,
+      "id": 284053,
+      "video": false,
+      "vote_average": 7.5,
+      "title": "Thor: Ragnarok",
+      "popularity": 61.568,
+      "poster_path": "/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg",
+      "original_language": "en",
+      "original_title": "Thor: Ragnarok",
+      "genre_ids": [
+        28,
+        12,
+        35,
+        14,
+        878
+      ],
+      "backdrop_path": "/kaIfm5ryEOwYg8mLbq8HkPuM1Fo.jpg",
+      "adult": false,
+      "overview": "Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the destruction of his home-world and the end of Asgardian civilization, at the hands of an all-powerful new threat, the ruthless Hela.",
+      "release_date": "2017-10-25"
+    },
+    {
+      "vote_count": 19427,
+      "id": 293660,
+      "video": false,
+      "vote_average": 7.5,
+      "title": "Deadpool",
+      "popularity": 50.728,
+      "poster_path": "/inVq3FRqcYIRl2la8iZikYYxFNR.jpg",
+      "original_language": "en",
+      "original_title": "Deadpool",
+      "genre_ids": [
+        28,
+        12,
+        35
+      ],
+      "backdrop_path": "/n1y094tVDFATSzkTnFxoGZ1qNsG.jpg",
+      "adult": false,
+      "overview": "Deadpool tells the origin story of former Special Forces operative turned mercenary Wade Wilson, who after being subjected to a rogue experiment that leaves him with accelerated healing powers, adopts the alter ego Deadpool. Armed with his new abilities and a dark, twisted sense of humor, Deadpool hunts down the man who nearly destroyed his life.",
+      "release_date": "2016-02-09"
+    },
+    {
+      "vote_count": 11653,
+      "id": 283995,
+      "video": false,
+      "vote_average": 7.7,
+      "title": "Guardians of the Galaxy Vol. 2",
+      "popularity": 44.672,
+      "poster_path": "/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg",
+      "original_language": "en",
+      "original_title": "Guardians of the Galaxy Vol. 2",
+      "genre_ids": [
+        28,
+        12,
+        35,
+        878
+      ],
+      "backdrop_path": "/aJn9XeesqsrSLKcHfHP4u5985hn.jpg",
+      "adult": false,
+      "overview": "The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage.",
+      "release_date": "2017-04-19"
+    },
+    {
+      "vote_count": 7108,
+      "id": 141052,
+      "video": false,
+      "vote_average": 6.2,
+      "title": "Justice League",
+      "popularity": 43.974,
+      "poster_path": "/eifGNCSDuxJeS1loAXil5bIGgvC.jpg",
+      "original_language": "en",
+      "original_title": "Justice League",
+      "genre_ids": [
+        28,
+        12,
+        14,
+        878
+      ],
+      "backdrop_path": "/o5T8rZxoWSBMYwjsUFUqTt6uMQB.jpg",
+      "adult": false,
+      "overview": "Fuelled by his restored faith in humanity and inspired by Superman's selfless act, Bruce Wayne and Diana Prince assemble a team of metahumans consisting of Barry Allen, Arthur Curry and Victor Stone to face the catastrophic threat of Steppenwolf and the Parademons who are on the hunt for three Mother Boxes on Earth.",
+      "release_date": "2017-11-15"
+    },
+    {
+      "vote_count": 8117,
+      "id": 181808,
+      "video": false,
+      "vote_average": 7,
+      "title": "Star Wars: The Last Jedi",
+      "popularity": 43.456,
+      "poster_path": "/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg",
+      "original_language": "en",
+      "original_title": "Star Wars: The Last Jedi",
+      "genre_ids": [
+        14,
+        12,
+        878,
+        28
+      ],
+      "backdrop_path": "/baNQpUlmX8shVmJBGHMSL5Y6MBl.jpg",
+      "adult": false,
+      "overview": "Rey develops her newly discovered abilities with the guidance of Luke Skywalker, who is unsettled by the strength of her powers. Meanwhile, the Resistance prepares to do battle with the First Order.",
+      "release_date": "2017-12-13"
+    },
+    {
+      "vote_count": 8,
+      "id": 443055,
+      "video": false,
+      "vote_average": 5.4,
+      "title": "Love of My Life",
+      "popularity": 43.199,
+      "poster_path": "/7b19Sh0Aef5vGa0OFtvJxLe2SK9.jpg",
+      "original_language": "en",
+      "original_title": "Love of My Life",
+      "genre_ids": [
+        18,
+        35
+      ],
+      "backdrop_path": "/7xWjv95DPjbx6zDiDVJspdZbrfL.jpg",
+      "adult": false,
+      "overview": "What if you had only five days to figure out... everything.",
+      "release_date": "2017-02-17"
+    },
+    {
+      "vote_count": 11822,
+      "id": 263115,
+      "video": false,
+      "vote_average": 7.8,
+      "title": "Logan",
+      "popularity": 40.89,
+      "poster_path": "/gGBu0hKw9BGddG8RkRAMX7B6NDB.jpg",
+      "original_language": "en",
+      "original_title": "Logan",
+      "genre_ids": [
+        28,
+        18,
+        878
+      ],
+      "backdrop_path": "/5pAGnkFYSsFJ99ZxDIYnhQbQFXs.jpg",
+      "adult": false,
+      "overview": "In the near future, a weary Logan cares for an ailing Professor X in a hideout on the Mexican border. But Logan's attempts to hide from the world and his legacy are upended when a young mutant arrives, pursued by dark forces.",
+      "release_date": "2017-02-28"
+    },
+    {
+      "vote_count": 10751,
+      "id": 315635,
+      "video": false,
+      "vote_average": 7.4,
+      "title": "Spider-Man: Homecoming",
+      "popularity": 40.701,
+      "poster_path": "/5x00yQZ3Mcz7duwMKc9GE8oZjFf.jpg",
+      "original_language": "en",
+      "original_title": "Spider-Man: Homecoming",
+      "genre_ids": [
+        28,
+        12,
+        878,
+        18
+      ],
+      "backdrop_path": "/vc8bCGjdVp0UbMNLzHnHSLRbBWQ.jpg",
+      "adult": false,
+      "overview": "Following the events of Captain America: Civil War, Peter Parker, with the help of his mentor Tony Stark, tries to balance his life as an ordinary high school student in Queens, New York City, with fighting crime as his superhero alter ego Spider-Man as a new threat, the Vulture, emerges.",
+      "release_date": "2017-07-05"
+    },
+    {
+      "vote_count": 11993,
+      "id": 297762,
+      "video": false,
+      "vote_average": 7.3,
+      "title": "Wonder Woman",
+      "popularity": 39.651,
+      "poster_path": "/imekS7f1OuHyUP2LAiTEM0zBzUz.jpg",
+      "original_language": "en",
+      "original_title": "Wonder Woman",
+      "genre_ids": [
+        12,
+        14,
+        10752
+      ],
+      "backdrop_path": "/6iUNJZymJBMXXriQyFZfLAKnjO6.jpg",
+      "adult": false,
+      "overview": "An Amazon princess comes to the world of Man in the grips of the First World War to confront the forces of evil and bring an end to human conflict.",
+      "release_date": "2017-05-30"
+    },
+    {
+      "vote_count": 11616,
+      "id": 259316,
+      "video": false,
+      "vote_average": 7.4,
+      "title": "Fantastic Beasts and Where to Find Them",
+      "popularity": 39.425,
+      "poster_path": "/1M91Bt3oGspda75H9eLqYZkJzgO.jpg",
+      "original_language": "en",
+      "original_title": "Fantastic Beasts and Where to Find Them",
+      "genre_ids": [
+        12,
+        10751,
+        14
+      ],
+      "backdrop_path": "/7GrpqAs0oDcFcwFwyygnUI7BrZA.jpg",
+      "adult": false,
+      "overview": "In 1926, Newt Scamander arrives at the Magical Congress of the United States of America with a magically expanded briefcase, which houses a number of dangerous creatures and their habitats. When the creatures escape from the briefcase, it sends the American wizarding authorities after Newt, and threatens to strain even further the state of magical and non-magical relations.",
+      "release_date": "2016-11-16"
+    },
+    {
+      "vote_count": 6380,
+      "id": 335984,
+      "video": false,
+      "vote_average": 7.4,
+      "title": "Blade Runner 2049",
+      "popularity": 39.153,
+      "poster_path": "/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+      "original_language": "en",
+      "original_title": "Blade Runner 2049",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "backdrop_path": "/sAtoMqDVhNDQBc3QJL3RF6hlhGq.jpg",
+      "adult": false,
+      "overview": "Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard, a former LAPD blade runner who has been missing for 30 years.",
+      "release_date": "2017-10-04"
+    },
+    {
+      "vote_count": 6448,
+      "id": 291805,
+      "video": false,
+      "vote_average": 6.8,
+      "title": "Now You See Me 2",
+      "popularity": 39.05,
+      "poster_path": "/hU0E130tsGdsYa4K9lc3Xrn5Wyt.jpg",
+      "original_language": "en",
+      "original_title": "Now You See Me 2",
+      "genre_ids": [
+        28,
+        35,
+        53
+      ],
+      "backdrop_path": "/zrAO2OOa6s6dQMQ7zsUbDyIBrAP.jpg",
+      "adult": false,
+      "overview": "One year after outwitting the FBI and winning the public’s adulation with their mind-bending spectacles, the Four Horsemen resurface only to find themselves face to face with a new enemy who enlists them to pull off their most dangerous heist yet.",
+      "release_date": "2016-06-02"
+    },
+    {
+      "vote_count": 13167,
+      "id": 271110,
+      "video": false,
+      "vote_average": 7.3,
+      "title": "Captain America: Civil War",
+      "popularity": 38.732,
+      "poster_path": "/kSBXou5Ac7vEqKd97wotJumyJvU.jpg",
+      "original_language": "en",
+      "original_title": "Captain America: Civil War",
+      "genre_ids": [
+        12,
+        28,
+        878
+      ],
+      "backdrop_path": "/m5O3SZvQ6EgD5XXXLPIP1wLppeW.jpg",
+      "adult": false,
+      "overview": "Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies.",
+      "release_date": "2016-04-27"
+    },
+    {
+      "vote_count": 9587,
+      "id": 269149,
+      "video": false,
+      "vote_average": 7.7,
+      "title": "Zootopia",
+      "popularity": 38.581,
+      "poster_path": "/sM33SANp9z6rXW8Itn7NnG1GOEs.jpg",
+      "original_language": "en",
+      "original_title": "Zootopia",
+      "genre_ids": [
+        16,
+        12,
+        10751,
+        35
+      ],
+      "backdrop_path": "/mhdeE1yShHTaDbJVdWyTlzFvNkr.jpg",
+      "adult": false,
+      "overview": "Determined to prove herself, Officer Judy Hopps, the first bunny on Zootopia's police force, jumps at the chance to crack her first case - even if it means partnering with scam-artist fox Nick Wilde to solve the mystery.",
+      "release_date": "2016-02-11"
+    },
+    {
+      "vote_count": 66,
+      "id": 444090,
+      "video": false,
+      "vote_average": 6,
+      "title": "The Ash Lad: In the Hall of the Mountain King",
+      "popularity": 38.346,
+      "poster_path": "/w0xFAhB4hhKQXqayZzTnUjA5RyB.jpg",
+      "original_language": "no",
+      "original_title": "Askeladden - I Dovregubbens hall",
+      "genre_ids": [
+        12,
+        14,
+        878
+      ],
+      "backdrop_path": "/tk2lccfPlBJVTdhzJ3cEJwO8Wtm.jpg",
+      "adult": false,
+      "overview": "Espen “Ash Lad”, a poor farmer’s son, embarks on a dangerous quest with his brothers to save the princess from a vile troll known as the Mountain King – in order to collect a reward and save his family’s farm from ruin.",
+      "release_date": "2017-09-29"
+    },
+    {
+      "vote_count": 115,
+      "id": 451504,
+      "video": false,
+      "vote_average": 5.6,
+      "title": "Joint Custody",
+      "popularity": 37.184,
+      "poster_path": "/wnRcnHoznZIJSR3xwp1qwibJxuf.jpg",
+      "original_language": "fr",
+      "original_title": "Garde alternée",
+      "genre_ids": [
+        35
+      ],
+      "backdrop_path": "/ndyDDRLitBb97W27PYsF7c8UHKP.jpg",
+      "adult": false,
+      "overview": "A wife finds out her husband has a mistress. She decides to propose her to share her life with her husband, alternating every two weeks.",
+      "release_date": "2017-12-20"
+    },
+    {
+      "vote_count": 6087,
+      "id": 337339,
+      "video": false,
+      "vote_average": 6.9,
+      "title": "The Fate of the Furious",
+      "popularity": 36.593,
+      "poster_path": "/dImWM7GJqryWJO9LHa3XQ8DD5NH.jpg",
+      "original_language": "en",
+      "original_title": "The Fate of the Furious",
+      "genre_ids": [
+        12,
+        28,
+        80,
+        53,
+        9648
+      ],
+      "backdrop_path": "/jzdnhRhG0dsuYorwvSqPqqnM1cV.jpg",
+      "adult": false,
+      "overview": "When a mysterious woman seduces Dom into the world of crime and a betrayal of those closest to him, the crew face trials that will test them as never before.",
+      "release_date": "2017-04-12"
+    },
+    {
+      "vote_count": 8141,
+      "id": 419430,
+      "video": false,
+      "vote_average": 7.5,
+      "title": "Get Out",
+      "popularity": 36.455,
+      "poster_path": "/1SwAVYpuLj8KsHxllTF8Dt9dSSX.jpg",
+      "original_language": "en",
+      "original_title": "Get Out",
+      "genre_ids": [
+        9648,
+        53,
+        27
+      ],
+      "backdrop_path": "/vZ7EVk7FaNEWYqlVWbFLHP8Z0LU.jpg",
+      "adult": false,
+      "overview": "Chris and his girlfriend Rose go upstate to visit her parents for the weekend. At first, Chris reads the family's overly accommodating behavior as nervous attempts to deal with their daughter's interracial relationship, but as the weekend progresses, a series of increasingly disturbing discoveries lead him to a truth that he never could have imagined.",
+      "release_date": "2017-02-24"
+    },
+    {
+      "vote_count": 11606,
+      "id": 209112,
+      "video": false,
+      "vote_average": 5.8,
+      "title": "Batman v Superman: Dawn of Justice",
+      "popularity": 35.075,
+      "poster_path": "/cGOPbv9wA5gEejkUN892JrveARt.jpg",
+      "original_language": "en",
+      "original_title": "Batman v Superman: Dawn of Justice",
+      "genre_ids": [
+        28,
+        12,
+        14
+      ],
+      "backdrop_path": "/vsjBeMPZtyB7yNsYY56XYxifaQZ.jpg",
+      "adult": false,
+      "overview": "Fearing the actions of a god-like Super Hero left unchecked, Gotham City’s own formidable, forceful vigilante takes on Metropolis’s most revered, modern-day savior, while the world wrestles with what sort of hero it really needs. And with Batman and Superman at war with one another, a new threat quickly arises, putting mankind in greater danger than it’s ever known before.",
+      "release_date": "2016-03-23"
+    },
+    {
+      "vote_count": 11773,
+      "id": 284052,
+      "video": false,
+      "vote_average": 7.3,
+      "title": "Doctor Strange",
+      "popularity": 34.7,
+      "poster_path": "/4PiiNGXj1KENTmCBHeN6Mskj2Fq.jpg",
+      "original_language": "en",
+      "original_title": "Doctor Strange",
+      "genre_ids": [
+        28,
+        12,
+        14,
+        878
+      ],
+      "backdrop_path": "/tFI8VLMgSTTU38i8TIsklfqS9Nl.jpg",
+      "adult": false,
+      "overview": "After his career is destroyed, a brilliant but arrogant surgeon gets a new lease on life when a sorcerer takes him under her wing and trains him to defend the world against evil.",
+      "release_date": "2016-10-25"
+    }
+  ]
+}

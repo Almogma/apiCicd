@@ -13,7 +13,7 @@ const getHttpRequest = async (url, args = {}) => await axios.get(url, args)
         console.log(error)
     })
 
-class MovieFeature {
+class MovieFeatures {
     static yearsAndPopluritySearch (data, rating, fromDate, toDate) {
         if (convertDate(toDate) < convertDate(fromDate)) {
             throw new Error()
@@ -30,6 +30,23 @@ class MovieFeature {
                     convertDate(fromDate), convertDate(toDate))
             })
     }
+
+    static yearsAndRatingSearch (data, pop, fromDate, toDate) {
+        if (convertDate(toDate) < convertDate(fromDate)) {
+            throw new Error()
+        }
+        return data.results.map(item => {
+            return {
+                title: item.title,
+                popularity: item.popularity,
+                release_date: item.release_date
+            }
+        }).filter(item => item.popularity >= pop)
+            .filter(item => {
+                return moment(convertDate(item.release_date)).isBetween(
+                    convertDate(fromDate), convertDate(toDate))
+            })
+    }
 }
 
-module.exports = { MovieFeature, convertDate, getHttpRequest }
+module.exports = { MovieFeature: MovieFeatures, convertDate, getHttpRequest }
