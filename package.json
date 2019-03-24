@@ -28,7 +28,6 @@
     "@types/mocha": "^5.2.6",
     "babel-eslint": "^10.0.1",
     "chai": "^4.2.0",
-    "cross-env": "^5.2.0",
     "eslint": "^5.15.2",
     "eslint-config-prettier": "^4.1.0",
     "eslint-config-standard": "^12.0.0",
@@ -38,9 +37,10 @@
     "eslint-plugin-standard": "^4.0.0",
     "markdown-to-html": "0.0.13",
     "mocha": "^6.0.2",
-    "sinon": "^7.2.7"
+    "sinon": "^7.3.0",
+    "sinon-chai": "^3.3.0"
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "^13.1.0"
+    "axios": "^0.18.0"
   }
 }

@@ -7,10 +7,10 @@ module.exports = {
     env:           {
         browser: true,
     },
-    extends:       ["prettier"],
+    extends:       "standard",
     'rules':       {
         'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
         'semi':        [2, 'never'],
-        'indent':      [0, 'tab'],
+        "indent": ["error", 4]
     },
 }
