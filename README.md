@@ -36,6 +36,20 @@ After nodeJs installion, open cmd and navigate to project folder and run the fol
 npm install my_dep --save
 ```
 
+### Features
+
+YearsAndPopularity - Input specific date range (YYYY-MM-DD format) and popularity index 
+(0 - 1000).
+A list of relevant and sorted (descending) movie titles will be printed.
+
+YearsAndRating - Input specific date range and average vote parameters (0 - 100).
+A list of relevant and sorted  (ascending) movie titles will be printed.
+
+Default date range: (1/1/2015) - (31/12/2020)
+Default popularity index: 50
+Default vote average: 5
+
+
 ### Project Structure 
 
 The tree below displays the main files and folders structure.
@@ -49,23 +63,25 @@ The tree below displays the main files and folders structure.
             ├── stubs
                 ├── mocj.json
             ├── movieFeature.spec.js
-├── requirements.txt                    // Project requirements - installation by python pip.
-├── .gitignore                          // Files to not track in git.
+├── .babelrc
+├── .eslintignore
+├── .gitignore                         // Files to not track in git.
+├── .package-lock.json
+├── README.md
 ```
 #Running the test
 
-This project contain unit test for every method we use.
-The tests is based on analytic solution.
-In order to run the tests we used Pycharm ide.
+This project contain unit test 
+Each test will run automatically with each push to GitHub, as part of the CICD process.
 ```
-test folder > right click > Run 'nosetest in test'
+npm test
 or
-ctrl + shift + F10
+shift + F10
 ```
 ## Authors
 
 - **[Yaniv Ben Zvi](https://github.com/yanivbenzvi)** 
 - **[Boris Leviken](https://github.com/Borisl90)** 
-- **          **
+- **[Aharon Paz](https://github.com/Ronni3p)**
 
 ##Acknowledgments
