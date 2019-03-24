@@ -1,97 +1,70 @@
-import MovieFeature from '../../module/MovieFeature'
-import axios from 'axios'
+import { MovieFeature, convertDate, getHttpRequest } from '../../module/MovieFeature'
 
+const moment = require('moment')
 const expect = require('chai').expect
 const chai = require('chai')
 chai.use(require('chai-sorted'))
 
-const getHttpRequest = async (url) => await axios.get(url)
-    .then((response) => {
-        return response.data
-    })
-    .catch((error) => {
-        console.log(error)
-    })
 
 describe('MovieFeature [unit]', () => {
+    const { rating, fromDate, toDate } = {
+        rating: 5,
+        fromDate: '2015-1-1',
+        toDate: '2020-12-31'
+    }
+    let movieRatingDateData
+    let movieProfitData
+    beforeEach(async () => {
+        movieRatingDateData = await getHttpRequest('https://api.themoviedb.org/3/discover/movie?api_key=eaa197b250138af7cf36467821b800d1',
+            {
+                language: 'en-US',
+                sort_by: 'vote_average.asc',
+                include_adult: false,
+                include_video: false,
+                page: 1,
+                with_original_language: 'en'
+            })
+        movieProfitData = await getHttpRequest('https://api.themoviedb.org/3/discover/movie?api_key=eaa197b250138af7cf36467821b800d1',
+            {
+                language: 'en-US',
+                sort_by: 'vote_average.asc',
+                include_adult: false,
+                include_video: false,
+                page: 1,
+                with_original_language: 'en'
+            })
+    })
 
     describe('#yearsAndPopluritySearch', () => {
-        it('retrieve movie with rating above and not bellow the requested', async () => {
-            const { rating, fromDate, toDate } = { rating: 5, fromDate: 2015, toDate: 2016 }
-            let data = await getHttpRequest('https://api.themoviedb.org/3/discover/movie?api_key=eaa197b250138af7cf36467821b800d1',
-                {
-                    language: 'en-US',
-                    sort_by: 'vote_average.asc',
-                    include_adult: false,
-                    include_video: false,
-                    page: 1,
-                    with_original_language: 'en'
-                })
-            console.log(data)
-            const result = MovieFeature.yearsAndPopluritySearch(data, rating, fromDate, toDate)
-            expect(result).to.be.an('array')
+        it('retrieve movie with rating above and not bellow the requested',  () => {
+            const result = MovieFeature.yearsAndPopluritySearch(movieRatingDateData, rating, fromDate, toDate)
+            expect(result).to.be.an('array').with.length.greaterThan(0)
             expect(result.every((item) => item.vote_average >= rating)).to.be.eql(true)
         })
 
-        it('retrieve movie only between specific years', async () => {
-            const { rating, fromDate, toDate } = { rating: 5, fromDate: 2015, toDate: 2016 }
-            let data = await getHttpRequest('https://api.themoviedb.org/3/discover/movie?api_key=eaa197b250138af7cf36467821b800d1',
-                {
-                    language: 'en-US',
-                    sort_by: 'vote_average.asc',
-                    include_adult: false,
-                    include_video: false,
-                    page: 1,
-                    with_original_language: 'en'
-                })
-            const result = MovieFeature.yearsAndPopluritySearch(data, rating, fromDate, toDate)
-            expect(result).to.be.an('array')
-            expect(result.every((item) => item.release_date >= fromDate && item.release_date <= toDate)).to.be.eql(true)
+        it('retrieve movie only between specific years',  () => {
+            const result = MovieFeature.yearsAndPopluritySearch(movieRatingDateData, rating, fromDate, toDate)
+            expect(result).to.be.an('array').with.length.greaterThan(0)
+            expect(result.every(item => moment(item.release_date).isBetween(
+                convertDate(fromDate), convertDate(toDate)))).to.be.eql(true)
         })
 
-        it('contain movie that projected in specifics year', async () => {
-            const { rating, fromDate, toDate } = { rating: 5, fromDate: 2015, toDate: 2016 }
-            let data = await getHttpRequest('https://api.themoviedb.org/3/discover/movie?api_key=eaa197b250138af7cf36467821b800d1',
-                {
-                    language: 'en-US',
-                    sort_by: 'vote_average.asc',
-                    include_adult: false,
-                    include_video: false,
-                    page: 1,
-                    with_original_language: 'en'
-                })
-            const result = MovieFeature.yearsAndPopluritySearch(data, rating, fromDate, toDate)
-            expect(result).to.be.an('array')
-            expect(result).to.deep.include({ movieName: 'tom and jery', year: 2012 })
+        it('contain movie that projected in specifics year',  () => {
+            const { rating, fromDate, toDate } = { rating: 5, fromDate: '2015-1-1', toDate: '2020-12-31'}
+            const result = MovieFeature.yearsAndPopluritySearch(movieRatingDateData, rating, fromDate, toDate)
+            expect(result).to.be.an('array').with.length.greaterThan(0)
+            expect(result).to.deep.include({ title: 'The Hard Way', vote_average: 5.6, release_date: convertDate('2019-03-20')})
         })
 
-        it('retrieve an empty list for false search result', async () => {
-            const { rating, fromDate, toDate } = { rating: 5, fromDate: 2999, toDate: 3016 }
-            let data = await getHttpRequest('https://api.themoviedb.org/3/discover/movie?api_key=eaa197b250138af7cf36467821b800d1',
-                {
-                    language: 'en-US',
-                    sort_by: 'vote_average.asc',
-                    include_adult: false,
-                    include_video: false,
-                    page: 1,
-                    with_original_language: 'en'
-                })
-            const result = MovieFeature.yearsAndPopluritySearch(data, rating, fromDate, toDate)
+        it('retrieve an empty list for false search result',  () => {
+            const { rating, fromDate, toDate } = { rating: 5, fromDate: '2099-1-1', toDate: '2999-12-31'}
+            const result = MovieFeature.yearsAndPopluritySearch(movieRatingDateData, rating, fromDate, toDate)
             expect(result).to.be.an('array').and.to.have.lengthOf(0)
         })
 
-        it('raise exception when years range is invalid', async () => {
-            const { rating, fromDate, toDate } = { rating: 5, fromDate: 2016, toDate: 2015 }
-            let data = await getHttpRequest('https://api.themoviedb.org/3/discover/movie?api_key=eaa197b250138af7cf36467821b800d1',
-                {
-                    language: 'en-US',
-                    sort_by: 'vote_average.asc',
-                    include_adult: false,
-                    include_video: false,
-                    page: 1,
-                    with_original_language: 'en'
-                })
-            expect(() => MovieFeature.yearsAndPopluritySearch(data, rating, fromDate, toDate)).to.throw(Error)
+        only('raise exception when years range is invalid',  () => {
+            const { rating, fromDate, toDate } = { rating: 5, fromDate: '2016-1-1', toDate: '2015-12-31' }
+            expect(() => MovieFeature.yearsAndPopluritySearch(movieRatingDateData, rating, fromDate, toDate)).to.throw(Error)
         })
     })
 
