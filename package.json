@@ -42,8 +42,8 @@
     "markdown-to-html": "0.0.13",
     "mocha": "^6.0.2",
     "showdown": "^1.9.0",
-    "sinon": "^7.3.0",
-    "sinon-chai": "^3.3.0"
+    "sinon-chai": "^3.3.0",
+    "sinon": "^7.3.0"
   },
   "dependencies": {
     "axios": "^0.18.0",
