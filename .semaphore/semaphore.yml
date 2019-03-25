@@ -35,14 +35,12 @@ blocks:
                         - ls
                         - echo "Runing Lint"
                         - npm run lint
-    - name: "Push Image TO Heroku"
+    -   name: "push heroku"
         task:
           jobs:
-            - name: Push
-              commands:
-                - checkout
-                - echo "Push Image"
-                - npm install
-                - npm run md2html
-                - git push https://heroku:14e767fb-d70f-4f96-a45d-1109043fc93d@git.heroku.com/calm-woodland-53810.git master
-
+            -   name: push image to heroku
+                commands:
+                  - checkout
+                  - npm install
+                  - npm run md2html
+                  - git push https://heroku:14e767fb-d70f-4f96-a45d-1109043fc93d@git.heroku.com/calm-woodland-53810.git master
