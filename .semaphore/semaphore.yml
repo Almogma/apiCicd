@@ -41,4 +41,4 @@ blocks:
             -   name: push image to heroku
                 commands:
                   - checkout
-                  - git push https://heroku:14e767fb-d70f-4f96-a45d-1109043fc93d@git.heroku.com/lit-lowlands-86215.git master
+                  - git push https://heroku:14e767fb-d70f-4f96-a45d-1109043fc93d@git.heroku.com/lit-lowlands-86215.git develop
