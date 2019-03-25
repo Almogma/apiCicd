@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require @babel/polyfill --require @babel/register \"test/**/*.spec.js\"",
-    "lint": "eslint ."
+    "test": "mocha --require @babel/polyfill --require @babel/register --timeout 5000 \"test/**/*.spec.js\"",
+    "lint": "eslint .",
+    "md2html": "node ./module/Md2Html.js"
   },
   "repository": {
     "type": "git",
@@ -36,9 +37,11 @@
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
+    "fs-extra": "^7.0.1",
     "load-json-file": "^5.2.0",
     "markdown-to-html": "0.0.13",
     "mocha": "^6.0.2",
+    "showdown": "^1.9.0",
     "sinon": "^7.3.0",
     "sinon-chai": "^3.3.0"
   },

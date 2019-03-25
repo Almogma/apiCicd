@@ -5,14 +5,6 @@ const convertDate = (date) => {
     return moment(date, ['MM-DD-YYYY', 'YYYY-MM-DD'])
 }
 
-const getHttpRequest = async (url, args = {}) => await axios.get(url, args)
-    .then((response) => {
-        return response.data
-    })
-    .catch((error) => {
-        console.log(error)
-    })
-
 class MovieFeatures {
     static yearsAndPopluritySearch (data, rating, fromDate, toDate) {
         if (convertDate(toDate) < convertDate(fromDate)) {
@@ -22,11 +14,11 @@ class MovieFeatures {
             return {
                 title: item.title,
                 vote_average: item.vote_average,
-                release_date: convertDate(item.release_date)
+                release_date: item.release_date
             }
         }).filter(item => item.vote_average >= rating)
             .filter(item => {
-                return moment(item.release_date).isBetween(
+                return moment(convertDate(item.release_date)).isBetween(
                     convertDate(fromDate), convertDate(toDate))
             })
     }
@@ -47,6 +39,16 @@ class MovieFeatures {
                     convertDate(fromDate), convertDate(toDate))
             })
     }
+
+    static async getHttpRequest (url, args = {}) {
+        return await axios.get(url, args)
+            .then((response) => {
+                return response.data
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+    }
 }
 
-module.exports = { MovieFeature: MovieFeatures, convertDate, getHttpRequest }
+module.exports = { MovieFeature: MovieFeatures, convertDate }
