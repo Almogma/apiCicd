@@ -49,7 +49,10 @@ const { pop, rating, fromDate, toDate } = {
 ```
 Function retrieve:
 ```
-bla
+[ { title: 'How to Train Your Dragon: The Hidden World', vote_average: 7.7, release_date: '2019-01-03' },
+  { title: 'Captain Marvel', vote_average: 7.3, release_date: '2019-03-06' },
+  { title: 'Us', vote_average: 7.3, release_date: '2019-03-14' },
+    ...]
 ```
 
 YearsAndRating - Input specific date range and average vote parameters (0 - 100).
@@ -66,7 +69,10 @@ MovieFeature.yearsAndRatingSearch(moviePopDateData, pop, fromDate, toDate)```
 ```
 Function retrieve:
 ```
-bla
+[ { title: 'How to Train Your Dragon: The Hidden World', popularity: 429.644, release_date: '2019-01-03' },
+  { title: 'Captain Marvel', popularity: 373.277, release_date: '2019-03-06' },
+  { title: 'Us', popularity: 299.886, release_date: '2019-03-14' },
+    ...]
 ```
 
 ### Project Structure 
